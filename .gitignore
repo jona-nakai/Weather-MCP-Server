@@ -1,0 +1,68 @@
+# Node dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+lib/
+out/
+
+# Temporary files and caches
+tmp/
+temp/
+.tmp/
+.temp/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+
+# Coverage and test artifacts
+coverage/
+.nyc_output/
+.jest/
+.vitest/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Editors/IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.iml
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Package tarballs
+*.tgz
+
+
