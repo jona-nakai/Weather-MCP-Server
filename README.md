@@ -1,5 +1,7 @@
 # Weather MCP Server
 
+An MCP server that utilizes https://api.weather.gov api to gather weather alerts and forecast through the Claude Desktop applicaiton.
+
 [Tutorial link](https://modelcontextprotocol.io/quickstart/server#node)
 
 ## Run project
@@ -11,13 +13,20 @@ git clone <repository-url>
 cd weather-mcp-server
 ```
 
-2. Build MCP server
+2. Install dependencies
+
+```bash
+npm install @modelcontextprotocol/sdk zod@3
+npm install -D @types/node typescript
+```
+
+3. Build MCP server
 
 ```bash
 npm run build
 ```
 
-3. Add MCP server to claude_desktop_config.json file
+4. Add MCP server to claude_desktop_config.json file
 
 ```bash
 {
@@ -30,10 +39,10 @@ npm run build
 }
 ```
 
-4. Run the MCP server
+5. Run the MCP server
 
 ```bash
 node /ABSOLUTE/PATH/TO/PARENT/FOLDER/weather/build/index.js
 ```
 
-5. Restart Claude Desktop. Ask Claude questions like "What’s the weather in Sacramento?" or "What are the active weather alerts in Texas?" to test the MCP server.
+6. Restart Claude Desktop. Ask Claude questions like "What’s the weather in Sacramento?" or "What are the active weather alerts in Texas?" to test the MCP server.
